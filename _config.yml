@@ -53,7 +53,10 @@ email_address: khalidkamil@icloud.com
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi! 👋🏼
-  My name is Khalid. I am an Aerospace Engineering graduate and iOS engineer. I have two years of experience in the aviation industry and develop apps for the iPhone, iPad, and Apple Watch.
+  
+  My name is Khalid. 
+  
+  I am an Aerospace Engineering graduate and iOS engineer. I have two years of experience in the aviation industry and develop apps for the iPhone, iPad, and Apple Watch.
 
 content:
   - title: Projects # Title for the section
