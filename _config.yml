@@ -102,16 +102,16 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      | Skills      | Hobbies     | Interests   |
-      | ----------- | ----------- | ----------- |
-      | Swift       | Taekwondo   | Productivity|
+      | Skills      | Hobbies     | Interests        |
+      | :----:      | :----:      | :----:           |
+      | Swift       | Taekwondo   | Productivity     |
       | Firebase    | Parkour     | Self Development |
-      | SQL         | Running     | Apple |
-      | Git         | Blockchain  | Formula 1 |
-      | Figma       | Coding      | MMA |
+      | SQL         | Running     | Apple            |
+      | Git         | Blockchain  | Formula 1        |
+      | Figma       | Coding      | MMA              |
 
 # Footer
-footer_show_references: true
+# footer_show_references: true
 # references_title: References on request (Override references text)
 
 # Build settings
