@@ -26,10 +26,10 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "FitTrack",
-    description: "A fitness tracking app with personalized workout plans",
-    icon: "/placeholder.svg?height=60&width=60",
-    screenshot: "/placeholder.svg?height=200&width=400",
+    name: "Pillars",
+    description: "A prayer times and qibla app for iPhone and Apple Watch with habit tracking",
+    icon: "/khalid-kamil.github.io/pillars.jpg?height=60&width=60",
+    screenshot: "/khalid-kamil.github.io/pillars-banner.png?height=200&width=400",
     expandedDescription: "FitTrack is a comprehensive fitness tracking application that provides users with personalized workout plans, progress tracking, and health insights.",
     role: "Lead iOS Developer",
     keyFeatures: [
@@ -43,22 +43,22 @@ const projects: Project[] = [
       "Ensuring seamless HealthKit integration and data synchronization",
       "Optimizing performance for real-time tracking features"
     ],
-    technologies: ["Swift", "SwiftUI", "HealthKit", "Core Data", "Combine", "CloudKit", "SwiftUI1", "HealthKit1", "Core Data1", "Combine1", "CloudKit1"],
-    appStoreLink: "https://apps.apple.com/us/app/fittrack",
-    githubLink: "https://github.com/johndoe/fittrack",
+    technologies: ["Swift", "SwiftUI", "WidgetKit", "WatchConnectivity", "UserDefaults", "Git", "Xcode Cloud", "Flutter"],
+    appStoreLink: "https://apps.apple.com/us/app/pillars-prayer-times-qibla/id1559086853",
+    // githubLink: "https://github.com/johndoe/fittrack",
     screenshots: [
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200"
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200"
     ],
     performanceMetrics: "4.8 star rating on the App Store with over 100,000 downloads",
     learnings: "Through this project, I deepened my understanding of HealthKit integration, improved my skills in creating intuitive user interfaces with SwiftUI, and learned valuable lessons about optimizing performance in data-intensive applications."
   },
   {
-    name: "CookBook",
-    description: "A recipe management app with meal planning features",
-    icon: "/placeholder.svg?height=60&width=60",
-    screenshot: "/placeholder.svg?height=200&width=400",
+    name: "Deep Connect",
+    description: "A conversation card game to foster deeper connections",
+    icon: "/khalid-kamil.github.io/deep-connect.png?height=60&width=60",
+    screenshot: "/khalid-kamil.github.io/deep-connect-banner.png?height=200&width=400",
     expandedDescription: "CookBook is a comprehensive recipe management and meal planning application designed to simplify cooking and nutrition tracking for users.",
     role: "iOS Developer",
     keyFeatures: [
@@ -72,22 +72,22 @@ const projects: Project[] = [
       "Implementing efficient search and filtering for large recipe databases",
       "Creating a smooth and intuitive UI for complex meal planning interactions"
     ],
-    technologies: ["Swift", "UIKit", "Core Data", "CloudKit", "Alamofire", "Kingfisher"],
-    appStoreLink: "https://apps.apple.com/us/app/cookbook",
-    githubLink: "https://github.com/johndoe/cookbook",
+    technologies: ["Swift", "SwiftUI", "Animations", "SwiftLint", "MVVM"],
+    appStoreLink: "https://apps.apple.com/us/app/deep-connect/id6466749665",
+    githubLink: "https://github.com/khalid-kamil/DeepConnect.git",
     screenshots: [
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200"
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200"
     ],
     performanceMetrics: "4.6 star rating on the App Store with over 50,000 downloads",
     learnings: "This project enhanced my skills in working with complex data relationships in Core Data, improved my understanding of CloudKit for data synchronization, and taught me valuable lessons about creating intuitive interfaces for feature-rich applications."
   },
   {
-    name: "WeatherNow",
-    description: "A weather app with real-time forecasts and notifications",
-    icon: "/placeholder.svg?height=60&width=60",
-    screenshot: "/placeholder.svg?height=200&width=400",
+    name: "LittleLemon Restaurant",
+    description: "A food ordering app with user authentication and persistent storage",
+    icon: "/khalid-kamil.github.io/little-lemon.png?height=60&width=60",
+    screenshot: "/khalid-kamil.github.io/little-lemon-banner.png?height=200&width=400",
     expandedDescription: "WeatherNow is a sleek and accurate weather forecasting app that provides users with real-time weather updates, severe weather alerts, and location-based forecasts.",
     role: "Solo iOS Developer",
     keyFeatures: [
@@ -101,13 +101,13 @@ const projects: Project[] = [
       "Implementing efficient background fetch for timely notifications",
       "Creating smooth animations for weather transitions and radar maps"
     ],
-    technologies: ["Swift", "SwiftUI", "CoreLocation", "WeatherKit", "MapKit", "Push Notifications"],
-    appStoreLink: "https://apps.apple.com/us/app/weathernow",
-    githubLink: "https://github.com/johndoe/weathernow",
+    technologies: ["Swift", "SwiftUI", "CoreData", "Firebase Authentication", "URLSession", "REST API", "SPM", "Git"],
+    // appStoreLink: "https://apps.apple.com/us/app/weathernow",
+    githubLink: "https://github.com/khalid-kamil/littlelemon-project.git",
     screenshots: [
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200",
-      "/placeholder.svg?height=400&width=200"
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200",
+      "/khalid-kamil.github.io/placeholder.svg?height=400&width=200"
     ],
     performanceMetrics: "4.7 star rating on the App Store with over 75,000 downloads",
     learnings: "This project significantly improved my skills in working with location services and map integrations. I gained valuable experience in processing and displaying real-time data, and learned how to create engaging visualizations for complex weather information."
@@ -206,31 +206,43 @@ export function Portfolio() {
       <header className="container mx-auto px-4 py-16 text-center">
         <div className="flex flex-col items-center mb-8">
           <img
-            src="/placeholder.svg?height=200&width=200"
+            src="/khalid-kamil.github.io/khalid-profile-image.png?height=200&width=200"
             alt="Khalid Kamil profile picture"
-            className="w-40 h-40 rounded-full border-4 border-[#1C71F2] mb-4"
+            className="w-40 h-40 rounded-full mb-4"
+            // className="w-40 h-40 rounded-full border-4 border-[#1C71F2] mb-4"
           />
-          <h1 className="text-4xl font-bold mb-4">Khalid Kamil</h1>
-          <p className="text-xl text-muted-foreground mb-4">Passionate iOS Developer | Creating Intuitive Mobile Experiences</p>
+          <h1 className="text-4xl font-bold mb-4 text-[#1C71F2]">Khalid Kamil</h1>
+          <p className="text-xl text-muted-foreground mb-4">Passionate iOS Developer | Ex-Apple App Store Editor</p>
+          <p className="max-w-2xl text-center mb-4">
+            With 1-2 years of experience in iOS development, I use my technical skills and experience as an App Store Editor 
+            to create user-centric mobile applications that combine elegant design with robust functionality.
+          </p>
           <p className="max-w-2xl text-center mb-8">
-            With over 5 years of experience in iOS development, I specialize in creating user-centric mobile applications
-            that combine elegant design with robust functionality. My expertise spans from conceptualization to deployment,
-            ensuring each project delivers exceptional value to users and stakeholders alike.
+            My expertise spans from conceptualization to deployment, ensuring each project delivers exceptional value 
+            to users and stakeholders alike.
           </p>
         </div>
         <div className="flex justify-center space-x-4">
-          <Button variant="outline" className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors">
+          <Button 
+            variant="outline" 
+            className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors"
+            onClick={() => window.open('https://www.github.com/khalid-kamil/', '_blank')}
+          >
             <GithubIcon className="w-4 h-4 mr-2" />
             GitHub
           </Button>
-          <Button variant="outline" className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors">
+          <Button 
+            variant="outline" 
+            className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors"
+            onClick={() => window.open('https://www.linkedin.com/in/khalid-kamil/', '_blank')}
+          >
             <LinkedinIcon className="w-4 h-4 mr-2" />
             LinkedIn
           </Button>
           <Button 
             variant="outline" 
             className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors"
-            onClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+            onClick={() => window.open('/khalid-kamil.github.io/khalid-resume.pdf', '_blank')}
           >
             <FileTextIcon className="w-4 h-4 mr-2" />
             Resume
@@ -243,7 +255,7 @@ export function Portfolio() {
           <h2 className="text-2xl font-semibold mb-4 text-[#1C71F2]">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <Card key={index} className="border-[#1C71F2]/20 hover:border-[#1C71F2]/50 transition-colors cursor-pointer" onClick={() => setSelectedProject(project)}>
+              <Card key={index} className="border-[#1C71F2]/20 hover:border-[#1C71F2]/50 transition-colors cursor-pointer" onClick={() => setSelectedProject(null)}>
                 <CardHeader className="flex flex-row items-start space-x-4">
                   <img
                     src={project.icon}
@@ -254,25 +266,25 @@ export function Portfolio() {
                     <CardTitle className="text-[#1C71F2]">{project.name}</CardTitle>
                     <CardDescription>{project.description}</CardDescription>
                     <div className="flex space-x-2 mt-2">
-                      {project.githubLink && (
-                        <a 
-                          href={project.githubLink} 
-                          className="bg-[#1C71F2] text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-[#1C71F2]/90 transition-colors" 
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          GitHub
-                        </a>
-                      )}
-                      {project.appStoreLink && (
-                        <a 
-                          href={project.appStoreLink} 
-                          className="bg-[#1C71F2] text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-[#1C71F2]/90 transition-colors" 
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          App Store
-                        </a>
-                      )}
-                    </div>
+                    {project.githubLink && (
+                      <a 
+                        href={project.githubLink} 
+                        className="bg-[#1C71F2] text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-[#1C71F2]/90 transition-colors" 
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        GitHub
+                      </a>
+                    )}
+                    {project.appStoreLink && (
+                      <a 
+                        href={project.appStoreLink} 
+                        className="bg-[#1C71F2] text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-[#1C71F2]/90 transition-colors" 
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        App Store
+                      </a>
+                    )}
+                  </div>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -301,7 +313,10 @@ export function Portfolio() {
                 <MailIcon className="w-6 h-6 mr-4 text-[#1C71F2]" />
                 <span>khalidkamil@icloud.com</span>
               </div>
-              <Button className="bg-[#1C71F2] hover:bg-[#1C71F2]/90">Get in touch</Button>
+              <Button 
+                className="bg-[#1C71F2] hover:bg-[#1C71F2]/90" 
+                onClick={() => window.open('mailto:khalidkamil@icloud.com?subject=Hey!')}
+              >Get in touch</Button>
             </CardContent>
           </Card>
         </section>
