@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { GithubIcon, LinkedinIcon, MailIcon, AppleIcon, XIcon } from "lucide-react"
+import { GithubIcon, LinkedinIcon, MailIcon, AppleIcon, XIcon, FileTextIcon } from "lucide-react"
 
 type Project = {
   name: string
@@ -42,7 +43,7 @@ const projects: Project[] = [
       "Ensuring seamless HealthKit integration and data synchronization",
       "Optimizing performance for real-time tracking features"
     ],
-    technologies: ["Swift", "SwiftUI", "HealthKit", "Core Data", "Combine", "CloudKit"],
+    technologies: ["Swift", "SwiftUI", "HealthKit", "Core Data", "Combine", "CloudKit", "SwiftUI1", "HealthKit1", "Core Data1", "Combine1", "CloudKit1"],
     appStoreLink: "https://apps.apple.com/us/app/fittrack",
     githubLink: "https://github.com/johndoe/fittrack",
     screenshots: [
@@ -203,8 +204,20 @@ export function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800">
       <header className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">Khalid Kamil</h1>
-        <p className="text-xl text-muted-foreground mb-8">Passionate iOS Developer | Creating Intuitive Mobile Experiences</p>
+        <div className="flex flex-col items-center mb-8">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Khalid Kamil profile picture"
+            className="w-40 h-40 rounded-full border-4 border-[#1C71F2] mb-4"
+          />
+          <h1 className="text-4xl font-bold mb-4">Khalid Kamil</h1>
+          <p className="text-xl text-muted-foreground mb-4">Passionate iOS Developer | Creating Intuitive Mobile Experiences</p>
+          <p className="max-w-2xl text-center mb-8">
+            With over 5 years of experience in iOS development, I specialize in creating user-centric mobile applications
+            that combine elegant design with robust functionality. My expertise spans from conceptualization to deployment,
+            ensuring each project delivers exceptional value to users and stakeholders alike.
+          </p>
+        </div>
         <div className="flex justify-center space-x-4">
           <Button variant="outline" className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors">
             <GithubIcon className="w-4 h-4 mr-2" />
@@ -213,6 +226,14 @@ export function Portfolio() {
           <Button variant="outline" className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors">
             <LinkedinIcon className="w-4 h-4 mr-2" />
             LinkedIn
+          </Button>
+          <Button 
+            variant="outline" 
+            className="hover:border-[#1C71F2] hover:text-[#1C71F2] transition-colors"
+            onClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+          >
+            <FileTextIcon className="w-4 h-4 mr-2" />
+            Resume
           </Button>
         </div>
       </header>
@@ -262,7 +283,7 @@ export function Portfolio() {
                   />
                   <h3 className="font-semibold text-sm mb-2">Technologies</h3>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.slice(0, 4).map((tech, index) => (
+                    {project.technologies.map((tech, index) => (
                       <Badge key={index} className="bg-[#1C71F2]/10 text-[#1C71F2] hover:bg-[#1C71F2]/20">{tech}</Badge>
                     ))}
                   </div>
